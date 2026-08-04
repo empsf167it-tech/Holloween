@@ -2,17 +2,17 @@
 
 :root {
   /* Ultra-Premium Color Palette */
-  --color-bg-deep: #190311;
-  --color-bg-main: #8c2560;
-  --color-bg-darker: #6d1547;
-  --color-bg-light-purple: #a63172;
+  --color-bg-deep: #1c0507;
+  --color-bg-main: #2b0b0e;
+  --color-bg-darker: #130304;
+  --color-bg-light-purple: #4d1217;
   --color-accent-orange: #ff7011;
   --color-accent-orange-hover: #f05a00;
   --color-yellow: #ffa800;
   --color-yellow-glow: #ffd000;
   --color-text-white: #ffffff;
-  --color-text-muted: #f3dbe8;
-  --color-text-dark: #2c0b20;
+  --color-text-muted: #fcebee;
+  --color-text-dark: #130304;
   
   /* Typography */
   --font-bubbly: 'Chewy', cursive, system-ui;
@@ -21,13 +21,13 @@
   
   /* Premium Shadow Systems */
   --shadow-text-3d: 
-    -3px -3px 0 #1a0311,  
-     3px -3px 0 #1a0311,
-    -3px  3px 0 #1a0311,
-     3px  3px 0 #1a0311,
-     0 5px 0 #540f35,
-     0 10px 0 #30061e,
-     0 15px 25px rgba(0, 0, 0, 0.7);
+    -3px -3px 0 #130304,  
+     3px -3px 0 #130304,
+    -3px  3px 0 #130304,
+     3px  3px 0 #130304,
+     0 5px 0 #54060b,
+     0 10px 0 #280204,
+     0 15px 25px rgba(0, 0, 0, 0.9);
   --shadow-text-orange:
     0 0 10px rgba(255, 112, 17, 0.6),
     0 0 20px rgba(255, 112, 17, 0.3);
@@ -293,8 +293,8 @@ header.sticky .nav-container {
   line-height: 0.95;
   color: var(--color-text-white);
   text-shadow: 
-    0 2px 0 #540f35,
-    0 4px 0 #30061e,
+    0 2px 0 #54060b,
+    0 4px 0 #280204,
     0 8px 15px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.08em;
   transition: var(--transition-fast);
@@ -379,9 +379,9 @@ header.sticky .nav-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2b0b23;
+  background-color: #2b0b0e;
   background-image: 
-    linear-gradient(to bottom, rgba(25, 3, 17, 0.1) 0%, rgba(25, 3, 17, 0.35) 60%, #250311 100%),
+    linear-gradient(to bottom, rgba(19, 3, 4, 0.1) 0%, rgba(19, 3, 4, 0.35) 60%, #1c0507 100%),
     url('home-hero-bg.jpg');
   background-blend-mode: multiply;
   background-size: cover;
@@ -399,7 +399,7 @@ header.sticky .nav-container {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at center, rgba(140, 37, 96, 0.45) 0%, rgba(25, 3, 17, 0) 75%);
+  background: radial-gradient(circle at center, rgba(140, 17, 25, 0.45) 0%, rgba(25, 2, 3, 0) 75%);
   pointer-events: none;
 }
 
@@ -449,11 +449,12 @@ header.sticky .nav-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-white);
+  color: var(--color-text-dark);
   font-family: var(--font-bubbly);
   font-size: 1.7rem;
   line-height: 1.15;
   text-align: center;
+  font-weight: 800;
   cursor: pointer;
   box-shadow: 
     0 12px 35px rgba(255, 112, 17, 0.4),
@@ -511,7 +512,7 @@ header.sticky .nav-container {
   left: 0;
   width: 100%;
   height: 120px;
-  background-image: linear-gradient(to top, var(--color-bg-main) 15%, rgba(140, 37, 96, 0) 100%);
+  background-image: linear-gradient(to top, var(--color-bg-main) 15%, rgba(140, 17, 25, 0) 100%);
   z-index: 12;
   pointer-events: none;
 }
@@ -540,8 +541,8 @@ section {
   line-height: 1.05;
   margin-bottom: 80px;
   text-shadow: 
-    0 3px 0 #5e113e,
-    0 6px 0 #30061e,
+    0 3px 0 #54060b,
+    0 6px 0 #280204,
     0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -601,8 +602,9 @@ section {
 .btn-orange {
   display: inline-block;
   background: linear-gradient(135deg, var(--color-accent-orange) 0%, #e05c04 100%);
-  color: var(--color-text-white);
+  color: var(--color-text-dark);
   font-family: var(--font-bubbly);
+  font-weight: 800;
   font-size: 1.5rem;
   letter-spacing: 0.05em;
   padding: 16px 48px;
@@ -634,7 +636,7 @@ section {
 }
 
 .service-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(109, 21, 71, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(20, 2, 4, 0.6) 100%);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 20px;
   padding: 56px 28px;
@@ -655,7 +657,7 @@ section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(255, 112, 17, 0.15) 0%, rgba(109, 21, 71, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 112, 17, 0.15) 0%, rgba(140, 17, 25, 0) 100%);
   opacity: 0;
   transition: var(--transition-smooth);
   z-index: 1;
@@ -671,7 +673,7 @@ section {
   box-shadow: 
     0 25px 45px rgba(0, 0, 0, 0.35),
     0 0 30px rgba(255, 112, 17, 0.25);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(109, 21, 71, 0.45) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(90, 8, 12, 0.4) 100%);
 }
 
 .services-grid:hover .service-card:not(:hover) {
@@ -832,7 +834,7 @@ section {
 
 /* Highlighted Popular Card */
 .ticket-card.featured {
-  background: linear-gradient(180deg, rgba(255, 112, 17, 0.05) 0%, rgba(109, 21, 71, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(255, 112, 17, 0.05) 0%, rgba(58, 5, 10, 0.6) 100%);
   border: 2px solid var(--color-accent-orange);
   box-shadow: var(--shadow-card-glow);
   transform: translateY(-8px);
@@ -946,7 +948,8 @@ section {
 .ticket-card.featured .btn-ticket-outline:hover {
   background: linear-gradient(135deg, var(--color-accent-orange) 0%, #e05c04 100%);
   border-color: var(--color-accent-orange);
-  color: var(--color-text-white);
+  color: var(--color-text-dark);
+  font-weight: 800;
   box-shadow: 0 10px 20px rgba(255, 112, 17, 0.4);
 }
 
@@ -991,7 +994,7 @@ section {
 }
 
 .subscribe-input::placeholder {
-  color: rgba(243, 219, 232, 0.45);
+  color: rgba(252, 235, 238, 0.45);
 }
 
 .subscribe-input:focus {
@@ -1314,9 +1317,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2b0b23;
+  background-color: #2b0b0e;
   background-image: 
-    linear-gradient(to bottom, rgba(25, 3, 17, 0.1) 0%, rgba(25, 3, 17, 0.35) 60%, #250311 100%),
+    linear-gradient(to bottom, rgba(19, 3, 4, 0.1) 0%, rgba(19, 3, 4, 0.35) 60%, #1c0507 100%),
     url('pumpkin-hero-bg.png');
   background-blend-mode: multiply;
   background-size: cover;
@@ -1626,7 +1629,7 @@ footer {
 }
 
 .dj-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(109, 21, 71, 0.12) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(58, 5, 10, 0.2) 100%);
   border: 1px solid rgba(255, 255, 255, 0.06);
   border-radius: 28px;
   padding: 40px;
@@ -1862,7 +1865,7 @@ footer {
 .about-cta-section {
   background-color: var(--color-bg-darker);
   background-image: 
-    linear-gradient(to bottom, rgba(37, 3, 17, 0.9) 0%, rgba(37, 3, 17, 0.9) 100%),
+    linear-gradient(to bottom, rgba(37, 2, 3, 0.9) 0%, rgba(37, 2, 3, 0.9) 100%),
     url('https://images.unsplash.com/photo-1508349937151-22b68b72d5b1?auto=format&fit=crop&w=1920&q=80');
   background-blend-mode: multiply;
   background-size: cover;
@@ -1912,9 +1915,10 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-white);
+  color: var(--color-text-dark);
   font-family: var(--font-bubbly);
   font-size: 1.75rem;
+  font-weight: 800;
   line-height: 1.2;
   text-align: center;
   cursor: pointer;
@@ -2054,6 +2058,10 @@ footer {
   box-shadow: 0 0 12px rgba(255, 112, 17, 0.2);
 }
 
+.form-control::placeholder {
+  color: rgba(252, 235, 238, 0.45);
+}
+
 textarea.form-control {
   resize: vertical;
   min-height: 140px;
@@ -2063,9 +2071,10 @@ textarea.form-control {
   display: block;
   width: 100%;
   background: linear-gradient(135deg, var(--color-accent-orange) 0%, #d84b00 100%);
-  color: var(--color-text-white);
+  color: var(--color-text-dark);
   font-family: var(--font-bubbly);
   font-size: 1.25rem;
+  font-weight: 800;
   padding: 16px 36px;
   border: none;
   border-radius: 8px;
