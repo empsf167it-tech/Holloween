@@ -146,19 +146,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const homeLink = document.querySelector('.nav-links a[href="index.html"]');
     if (homeLink) homeLink.classList.add('active');
 
+    // Map section IDs to nav hrefs
+    const sectionNavMap = {
+      'hero':    'index.html',
+      'about':   'index.html',
+      'program': 'program.html',
+      'tickets': 'tickets.html',
+      'contact': 'contact.html'
+    };
+
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.2
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
     };
 
     const observerCallback = (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.getAttribute('id');
+          const targetHref = sectionNavMap[id];
+          if (!targetHref) return;
           navLinks.forEach(link => {
             const href = link.getAttribute('href');
-            if (href === `index.html#${id}` || href === `#${id}` || (id === 'hero' && href === 'index.html')) {
+            if (href === targetHref) {
               link.classList.add('active');
             } else {
               link.classList.remove('active');

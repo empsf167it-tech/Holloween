@@ -264,13 +264,32 @@ header.sticky .nav-container {
 }
 
 .logo {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(255, 112, 17, 0.5));
+  transition: var(--transition-fast);
+}
+
+.logo:hover .logo-icon {
+  filter: drop-shadow(0 0 12px rgba(255, 112, 17, 0.8));
+}
+
+.logo-text {
+  text-align: left;
 }
 
 .logo-main {
   font-family: var(--font-bubbly);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 0.95;
   color: var(--color-text-white);
   text-shadow: 
@@ -288,7 +307,7 @@ header.sticky .nav-container {
 
 .logo-sub {
   font-family: var(--font-bubbly);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--color-text-white);
   letter-spacing: 0.35em;
   margin-top: -2px;
@@ -504,6 +523,7 @@ section {
 }
 
 .section-subtitle {
+  display: block;
   font-family: var(--font-serif);
   font-size: 2rem;
   color: var(--color-text-muted);
@@ -1972,10 +1992,10 @@ footer {
 
 .contact-detail-value {
   font-family: var(--font-bubbly);
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   color: var(--color-yellow);
-  line-height: 1.1;
-  margin-bottom: 8px;
+  line-height: 1.2;
+  margin-top: 6px;
   letter-spacing: 0.02em;
 }
 
@@ -2040,6 +2060,8 @@ textarea.form-control {
 }
 
 .btn-send {
+  display: block;
+  width: 100%;
   background: linear-gradient(135deg, var(--color-accent-orange) 0%, #d84b00 100%);
   color: var(--color-text-white);
   font-family: var(--font-bubbly);
@@ -2050,6 +2072,7 @@ textarea.form-control {
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(255, 112, 17, 0.3);
   transition: var(--transition-fast);
+  text-align: center;
 }
 
 .btn-send:hover {
@@ -2088,7 +2111,7 @@ textarea.form-control {
     gap: 20px;
   }
   .contact-detail-value {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
   }
   .map-container {
     height: 360px;
